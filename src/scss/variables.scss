@@ -1,0 +1,57 @@
+$color-gray-rgb: "27, 27, 34";
+$color-darkGray-rgb: "18, 18, 24";
+$color-purple-rgb: "107, 4, 255";
+$color-pink-rgb: "255, 97, 190";
+$color-black-rgb: "12, 12, 15";
+$color-red-rgb: "210, 15, 15";
+$color-green-rgb: "15, 131, 15";
+$color-white-rgb: "204, 204, 204";
+
+$theme-colors-rgb: (
+  "gray": $color-gray-rgb,
+  "darkGray": $color-darkGray-rgb,
+  "purple": $color-purple-rgb,
+  "pink": $color-pink-rgb,
+  "black": $color-black-rgb,
+  "red": $color-red-rgb,
+  "green": $color-green-rgb,
+  "white": $color-white-rgb,
+);
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1420px,
+);
+
+$container-max-widths: (
+  sm: 100%,
+  md: 100%,
+  lg: 1100px,
+  xl: 1360px,
+);
+
+$spacer: 8px;
+
+$spacers: (
+  0: 0,
+  4: $spacer * 0.5,
+  8: $spacer,
+  12: $spacer * 1.5,
+  16: $spacer * 2,
+  20: $spacer * 2.5,
+  24: $spacer * 3,
+  32: $spacer * 4,
+  36: $spacer * 4.5,
+  40: $spacer * 5,
+  48: $spacer * 6,
+  56: $spacer * 7,
+  64: $spacer * 8,
+  72: $spacer * 9,
+  80: $spacer * 10,
+  88: $spacer * 11,
+  96: $spacer * 12,
+  104: $spacer * 13,
+);

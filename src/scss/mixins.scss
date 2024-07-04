@@ -1,0 +1,53 @@
+@mixin generate-font-size-classes {
+  @each $key, $value in $spacers {
+    .fs-#{$key} {
+      font-size: $value;
+    }
+
+    .mr-#{$key} {
+      margin-right: $value !important;
+    }
+
+    .ml-#{$key} {
+      margin-left: $value !important;
+    }
+
+    .pr-#{$key} {
+      padding-right: $value !important;
+    }
+
+    .pl-#{$key} {
+      padding-left: $value !important;
+    }
+
+    @media screen and (min-width: 992px) {
+      .fs-lg-#{$key} {
+        font-size: $value;
+      }
+
+      .mr-lg-#{$key} {
+        margin-right: $value !important;
+      }
+
+      .ml-lg-#{$key} {
+        margin-left: $value !important;
+      }
+
+      .pr-lg-#{$key} {
+        padding-right: $value !important;
+      }
+
+      .pl-lg-#{$key} {
+        padding-left: $value !important;
+      }
+    }
+
+    @media screen and (max-width: 992px) {
+      .fs-mobile-#{$key} {
+        font-size: $value !important;
+      }
+    }
+  }
+}
+
+@include generate-font-size-classes;

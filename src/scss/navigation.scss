@@ -1,0 +1,10 @@
+.nav-container {
+  border-right: 1px solid rgba(128, 128, 128, 0.4);
+
+  .logout-button {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+  }
+}
