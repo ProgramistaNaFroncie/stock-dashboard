@@ -14,7 +14,7 @@ const Home = async () => {
       <section className="container py-40">
         <h1 className="mb-32">Overview</h1>
         <div className="row">
-          <div className="col-8">
+          <div className="col-lg-8 col-12">
             <div className="border-full p-16">
               <h3 className="mb-32">Recent News:</h3>
               <News
@@ -39,7 +39,7 @@ const Home = async () => {
               />
             </div>
           </div>
-          <div className="col-4">
+          <div className="col-lg-4 col-12 mt-24 mt-lg-0">
             <div className="border-full p-16">
               <h3 className="mb-32">Top Earners:</h3>
               {stockData

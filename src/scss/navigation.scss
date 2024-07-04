@@ -7,4 +7,38 @@
     bottom: 0;
     left: 0;
   }
+
+  @media screen and (max-width: 960px) {
+    position: fixed;
+    background-color: rgb(18, 18, 24);
+    transition: 0.4s;
+    left: -240px;
+    top: 0;
+    white-space: nowrap;
+    height: 100vh;
+    z-index: 4;
+
+    &.active {
+      left: 0;
+    }
+  }
+}
+
+.hamburger {
+  position: fixed;
+  left: 20px;
+  right: 20px;
+  background-color: rgb(18, 18, 24);
+  padding: 0 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid rgb(255, 97, 190);
+  color: rgb(255, 97, 190);
+  z-index: 3;
+  cursor: pointer;
+}
+
+.hamburger-icon {
+  font-size: 24px;
 }

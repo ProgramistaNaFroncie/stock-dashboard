@@ -177,7 +177,7 @@ const CreateAlert: React.FC<IProps> = ({
         ]}
       />
 
-      <div className="d-flex w-100 justify-content-between">
+      <div className="d-flex flex-column flex-md-row w-100 justify-content-between">
         <Button
           type="submit"
           className="btn btn-primary btn-block mt-32 px-40"
@@ -201,7 +201,7 @@ const CreateAlert: React.FC<IProps> = ({
         {isEdit && (
           <Button
             type="button"
-            className="btn btn-primary btn-block mt-32 px-40 text-red border-red"
+            className="btn btn-primary btn-block mt-lg-32 mt-24 px-40 text-red border-red"
             disabled={isLoading}
             onClick={openModal}
             data-testid="alert-button"
@@ -220,7 +220,7 @@ const CreateAlert: React.FC<IProps> = ({
         )}
       </div>
       {isModal && isEdit && (
-        <div className="confimation-modal d-flex align-items-center justify-content-center">
+        <div className="confimation-modal d-flex align-items-center justify-content-center px-16">
           <div className="bg-darkGray d-flex flex-column p-40 text-center confimation-modal-content">
             <div className="d-flex w-100 justify-content-end mb-32">
               <div className="cursor-pointer" onClick={() => setIsModal(false)}>
