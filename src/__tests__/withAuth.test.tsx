@@ -3,9 +3,8 @@ import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import { useRouter } from "next/navigation";
 import { AppContext } from "@/App.context";
-import { withAuth } from "../hoc/withAuth";
-import { User } from "firebase/auth";
-import { createMockUser } from "./utils/createMockRouter";
+import { withAuth } from "@/hoc/withAuth";
+import { createMockUser } from "./utils";
 
 jest.mock("next/navigation", () => ({
   useRouter: jest.fn(),

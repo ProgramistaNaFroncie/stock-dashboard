@@ -11,7 +11,7 @@ import App from "@/App";
 import { onAuthStateChanged, signOut } from "@firebase/auth";
 import { auth } from "@/lib/firebase";
 import { AppContext } from "@/App.context";
-import { createMockUser } from "./utils/createMockRouter";
+import { createMockUser } from "./utils";
 
 jest.mock("@firebase/auth", () => ({
   onAuthStateChanged: jest.fn(),

@@ -1,7 +1,7 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
-import StockDetail from "../components/StockDetail";
+import StockDetail from "@/components/StockDetail";
 import { IStockData } from "@/app/indexes/types";
 
 jest.mock("react-charts", () => ({
