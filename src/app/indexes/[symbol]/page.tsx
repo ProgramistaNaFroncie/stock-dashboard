@@ -14,6 +14,7 @@ enum ButtonVariants {
 const StockPage = async ({ params }: { params: { symbol: string } }) => {
   const stockData: IStockData[] = await fetchStockData();
   const stock = stockData.find((stock) => stock.symbol === params.symbol);
+  const stockDetailsDate = stock?.prices[0].time.split(" ")[0];
 
   return stock ? (
     <AuthContainer>
@@ -24,7 +25,7 @@ const StockPage = async ({ params }: { params: { symbol: string } }) => {
         <h1 className="mt-24">
           {stock.name} ({stock.symbol})
         </h1>
-
+        <p className="mb-4">{stockDetailsDate}</p>
         <p>
           Last 24h:{" "}
           <span
