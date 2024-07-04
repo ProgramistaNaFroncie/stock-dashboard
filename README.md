@@ -27,4 +27,5 @@ Zapisałem krok po kroku całe flow tworzenia tej aplikacji, byście mogli pozna
 12. Refactor kodu, wyodrębnienie różnych komponentów (typu Input.tsx), aby kod był czystszy i bardziej przejrzysty.
 13. Ostylowanie całej aplikacji, dodanie responsywności.
 14. Dodanie kilku przykładowych testów jednostkowych.
-15. Ustawienie deploymentu aplikacji.
+15. Dodanie modala przy usunięciu alertu, by zapobiec przepadkowemu usunięciu przez użytkownika
+16. Ustawienie deploymentu aplikacji.
