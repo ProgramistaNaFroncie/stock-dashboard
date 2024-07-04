@@ -8,6 +8,7 @@ Oto kilka wyjaśnień, dlaczego podjąłem takie, a nie inne decyzje. Mając dos
 - **Unity testy**: Stworzyłem kilka poglądowych unit testów, by pokazać, że wiem o co chodzi. Nie skupiałem się na wysokim % coverage ze względu na ograniczenie czasowe.
 - **Zmockowane Dane**: By ominąć wszystkie ograniczenia aplikacja postawiona jest na Mockach pobranych bezpośrednio z API i zapisanych w plikacj .json foldrze /src/mocks. Stworzyłem flagę USE_MOCKS dzięki której można to wyłączyć po zmianie jednego enva.
 - **Używane spółki**: Specjalnie ograniczyłem aplikacje do 6-ciu spółek, których symbole są shardcodowane w pliku do fetchowania danych. Oczywiście nie jest to produkcyjne podejście i w realnej aplikacji ograniczenie by nie istniało :)
+- **Recent News na homepage**: Jest to tylko hardcode placeholder, by na homepage'u nie było pusto :)
 
 ## Moje workflow
 
